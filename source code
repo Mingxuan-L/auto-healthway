@@ -1,0 +1,135 @@
+^Q::
+Run % "https://patientconnect.bu.edu/home.aspx"
+Sleep % 2000
+Send, {F6}
+__JS程式碼=
+(
+document.querySelector("#wrapper > div > form > button").click();
+void(0);
+)
+WinGetActiveTitle, __視窗標題
+if InStr(__視窗標題," - Google Chrome") {
+    BlockInput, On
+    Send, ^l
+    clipboard_save := clipboard
+    clipboard:=
+    clipboard:="_Javascript:" . __JS程式碼
+    ClipWait
+    Send ^v
+    Sleep 100
+    clipboard = %clipboard_save%
+    Send, {Home}
+    Send, {Delete}
+    Send, {Enter}
+    BlockInput, Off
+} else {
+    Msgbox % "只有Google瀏覽器才可以執行該函式"
+}
+Sleep % 2000
+__JS程式碼=
+(
+document.querySelector("#ctl03 > div:nth-child(6) > div > a").click();
+void(0);
+)
+WinGetActiveTitle, __視窗標題
+if InStr(__視窗標題," - Google Chrome") {
+    BlockInput, On
+    Send, ^l
+    clipboard_save := clipboard
+    clipboard:=
+    clipboard:="_Javascript:" . __JS程式碼
+    ClipWait
+    Send ^v
+    Sleep 100
+    clipboard = %clipboard_save%
+    Send, {Home}
+    Send, {Delete}
+    Send, {Enter}
+    BlockInput, Off
+} else {
+    Msgbox % "只有Google瀏覽器才可以執行該函式"
+}
+Sleep % 2000
+__JS程式碼=
+(
+document.querySelector("#ctl03 > div:nth-child(7) > div > a").click();
+void(0);
+)
+WinGetActiveTitle, __視窗標題
+if InStr(__視窗標題," - Google Chrome") {
+    BlockInput, On
+    Send, ^l
+    clipboard_save := clipboard
+    clipboard:=
+    clipboard:="_Javascript:" . __JS程式碼
+    ClipWait
+    Send ^v
+    Sleep 100
+    clipboard = %clipboard_save%
+    Send, {Home}
+    Send, {Delete}
+    Send, {Enter}
+    BlockInput, Off
+} else {
+    Msgbox % "只有Google瀏覽器才可以執行該函式"
+}
+Sleep % 2000
+__JS程式碼=
+(
+document.querySelector("#mainbody > div.container-fluid > div.header.ta-center.mb-3 > div > div.col-xs-6.ta-right > a").click();
+void(0);
+)
+WinGetActiveTitle, __視窗標題
+if InStr(__視窗標題," - Google Chrome") {
+    BlockInput, On
+    Send, ^l
+    clipboard_save := clipboard
+    clipboard:=
+    clipboard:="_Javascript:" . __JS程式碼
+    ClipWait
+    Send ^v
+    Sleep 100
+    clipboard = %clipboard_save%
+    Send, {Home}
+    Send, {Delete}
+    Send, {Enter}
+    BlockInput, Off
+} else {
+    Msgbox % "只有Google瀏覽器才可以執行該函式"
+}
+Sleep % 2000
+__JS程式碼=
+(
+ document.querySelector("#mainbody > main > form > div:nth-child(60) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > main > form > div:nth-child(89) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > main > form > div:nth-child(118) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > main > form > div:nth-child(147) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > main > form > div:nth-child(176) > fieldset > div > div:nth-child(1) > div").click();
+ document.querySelector("#mainbody > main > form > div:nth-child(205) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > main > form > div:nth-child(234) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > main > form > div:nth-child(263) > fieldset > div > div:nth-child(1) > div").click();
+document.querySelector("#mainbody > footer > div > div.col-xs-6.ta-right > input").click();
+void(0);
+)
+WinGetActiveTitle, __視窗標題
+if InStr(__視窗標題," - Google Chrome") {
+    BlockInput, On
+    Send, ^l
+    clipboard_save := clipboard
+    clipboard:=
+    clipboard:="_Javascript:" . __JS程式碼
+    ClipWait
+    Send ^v
+    Sleep 100
+    clipboard = %clipboard_save%
+    Send, {Home}
+    Send, {Delete}
+    Send, {Enter}
+    BlockInput, Off
+} else {
+    Msgbox % "只有Google瀏覽器才可以執行該函式"
+}
+Sleep % 2000
+Send, !{F4}
+Return
+
